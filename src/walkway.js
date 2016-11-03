@@ -139,10 +139,6 @@
       return new Walkway(opts);
     }
 
-    if (typeof opts === 'string') {
-      opts = { selector: opts };
-    }
-
     if (!opts.selector) {
       return this.error('A selector needs to be specified');
     }
@@ -183,8 +179,10 @@
      */
     getElements: function() {
       var self = this;
-      var selector = _createSelector(this.selector);
-      var els = document.querySelectorAll(selector);
+      // var selector = _createSelector(this.selector);
+      var supported = ['path', 'line', 'polyline'];
+      console.log(this.selector);
+      var els = this.selector.querySelectorAll(supported.join(', '));
       els = Array.prototype.slice.call(els);
 
       return els.map(function(el) {

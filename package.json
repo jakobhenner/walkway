@@ -1,14 +1,14 @@
 {
-  "name": "walkway.js",
+  "name": "walkway",
   "version": "0.0.7",
-  "description": "An easy way to animate simple svg elements.",
+  "description": "An easy way to animate simple svg elements. Forked",
   "main": "src/walkway.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ConnorAtherton/walkway.git"
+    "url": "https://github.com/jakobhenner/walkway.git"
   },
   "keywords": [
     "svg",
@@ -17,9 +17,9 @@
   "author": "Connor Atherton",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ConnorAtherton/walkway/issues"
+    "url": "https://github.com/jakobhenner/walkway/issues"
   },
-  "homepage": "https://github.com/ConnorAtherton/walkway",
+  "homepage": "https://github.com/jakobhenner/walkway",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-jshint": "^2.0.0",

@@ -75,14 +75,14 @@
     <script>
       document.addEventListener('DOMContentLoaded', function() {
 
-        var svg = new Walkway('#triangle');
+        var svg = new Walkway({selector: document.querySelector('#triangle')});
 
         svg.draw(function() {
           console.log('Finished triangle!');
         });
 
         var svg2 = new Walkway({
-          selector: '#diamond',
+          selector: document.querySelector('#diamond'),
           duration: 2500,
           easing: 'linear'
         }).draw(function() {
@@ -90,7 +90,7 @@
         });
 
         var svg3 = new Walkway({
-          selector: '#tester',
+          selector: document.querySelector('#tester'),
           duration: 5000,
           easing: 'linear'
         });
@@ -100,14 +100,14 @@
         });
 
         var svg4 = new Walkway({
-          selector: '#ps4',
+          selector: document.querySelector('#ps4'),
           duration: 3500
         });
 
         svg4.draw();
 
         var svg5 = new Walkway({
-          selector: '#polyline',
+          selector: document.querySelector('#polyline'),
           duration: 3000
         });
 
@@ -116,7 +116,7 @@
         });
 
         var svg6 = new Walkway({
-          selector: '#customEasing',
+          selector: document.querySelector('#customEasing'),
           duration: 3000,
           easing: function(t) {
             return t * t * t;
