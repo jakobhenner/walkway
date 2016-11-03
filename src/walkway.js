@@ -181,7 +181,6 @@
       var self = this;
       // var selector = _createSelector(this.selector);
       var supported = ['path', 'line', 'polyline'];
-      console.log(this.selector);
       var els = this.selector.querySelectorAll(supported.join(', '));
       els = Array.prototype.slice.call(els);
 
